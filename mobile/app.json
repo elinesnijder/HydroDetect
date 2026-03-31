@@ -27,7 +27,14 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "HydroDetect precisa de aceder à tua localização para mostrar as barragens mais próximas e calcular distâncias durante operações de emergência."
+        }
+      ],
+      "@maplibre/maplibre-react-native"
     ]
   }
 }
